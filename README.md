@@ -2,7 +2,7 @@
 
 **Application Streamlit** pour rechercher, comparer et choisir le meilleur fournisseur pour chaque produit photovoltaïque et industriel.
 
-![Streamlit](https://static.streamlit.io/examples/streamlit_logo_white.svg)
+🌐 **Application en ligne :** [https://eqnovia-gestion-fournisseurs.streamlit.app/](https://eqnovia-gestion-fournisseurs.streamlit.app/)
 
 ---
 
@@ -11,7 +11,7 @@
 Cette application permet de :
 - ✅ Gérer une base de fournisseurs et de produits
 - ✅ Importer des fichiers Excel pour enrichir la base
-- ✅ Rechercher des produits par designation, marque ou référence
+- ✅ Rechercher des produits par désignation, marque ou référence
 - ✅ Comparer les prix entre différents fournisseurs
 - ✅ Visualiser les meilleures offres avec tableau de prix
 - ✅ Télécharger les résultats en CSV
@@ -28,7 +28,7 @@ La base contient déjà des données de référence provenant de multiples fourn
 - Python 3.8 ou supérieur
 - pip
 
-### Installation
+### Installation locale
 
 ```bash
 # Cloner le dépôt
@@ -53,7 +53,7 @@ L'application ouvrira automatiquement dans votre navigateur à l'adresse `http:/
 
 ---
 
-## 📦 Fonnalités
+## 📦 Fonctionnalités
 
 ### Onglet "🏭 Liste des fournisseurs"
 - Vue d'ensemble des fournisseurs avec métriques clés
@@ -77,32 +77,42 @@ L'application ouvrira automatiquement dans votre navigateur à l'adresse `http:/
 
 ## 🛠️ Technologies utilisées
 
+<p align="left">
+  <img src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png" alt="Streamlit" height="50" style="margin-right: 15px;"/>
+  <img src="https://pandas.pydata.org/static/img/pandas_white.svg" alt="Pandas" height="50" style="margin-right: 15px;"/>
+  <img src="https://altair-viz.github.io/_static/altair-logo-light.png" alt="Altair" height="50" style="margin-right: 15px;"/>
+  <img src="https://numpy.org/images/logo.svg" alt="NumPy" height="50" style="margin-right: 15px;"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" height="50"/>
+</p>
+
 - **Streamlit** - Interface web interactive
 - **Pandas** - Manipulation et traitement des données
 - **Altair** - Visualisations graphiques
 - **NumPy** - Calculs numériques
+- **Python** - Langage principal
 
 ---
 
 ## 📁 Structure du projet
 
-```
+```text
 .
-├── app.py              # Application Streamlit principale
-├── Data Fournisseur.xlsx # Base de données initiale
-├── requirements.txt    # Dépendances Python
-└── README.md         # Cette documentation
+├── app.py                  # Application Streamlit principale
+├── requirements.txt        # Dépendances Python
+└── README.md               # Cette documentation
 ```
+
+*(Note : Les données de base sont intégrées directement dans le code `app.py` pour un déploiement facile sur Streamlit Cloud).*
 
 ---
 
-## 📊 Aperçu
+## 🌐 Déploiement sur Streamlit Cloud
 
-<p align="center">
-  <img src="https://static.streamlit.io/examples/streamlit_logo_white.svg" alt="Streamlit Logo" width="200">
-</p>
-
-**Application de gestion de fournisseurs** - Comparez les prix, recherchez des produits et prenez des décisions d'achat éclairées.
+1. Poussez votre code sur un dépôt GitHub public.
+2. Allez sur [share.streamlit.io](https://share.streamlit.io/).
+3. Connectez votre compte GitHub.
+4. Sélectionnez votre dépôt, la branche (`main`) et le fichier principal (`app.py`).
+5. Cliquez sur **Deploy!**
 
 ---
 
@@ -114,9 +124,3 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 3. Commiter vos changements
 4. Pousser vers la branche
 5. Ouvrir une Pull Request
-
----
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
